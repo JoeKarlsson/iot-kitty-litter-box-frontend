@@ -1,0 +1,31 @@
+{
+  "name": "iot-kitty-litter-box-frontend",
+  "version": "1.0.0",
+  "description": "Welcome to to world of IoT (Internet of Toilets 🚽). This is the code you will need to setup your very own internet connect kitty litter box!",
+  "author": "Joe Karlsson<joekarlsson1@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeKarlsson/iot-kitty-litter-box-frontend.git"
+  },
+  "keywords": [
+    "express",
+    "webpack",
+    "node",
+    "kitty",
+    "cat",
+    "IoT",
+    "Internet of Things",
+    "MongoDB",
+    "Data Visualization"
+  ],
+  "bugs": {
+    "url": "https://github.com/JoeKarlsson/iot-kitty-litter-box-frontend/issues"
+  },
+  "homepage": "https://github.com/JoeKarlsson/iot-kitty-litter-box-frontend#readme"
+}
