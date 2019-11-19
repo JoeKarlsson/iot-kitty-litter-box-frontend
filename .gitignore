@@ -4,8 +4,6 @@ node_modules/
 npm-debug.log
 dist/
 lib/
-coverage/
-testCoverage/
 *.log
 bin/**/*
 bin/
@@ -13,17 +11,6 @@ bin/
 *.pom
 *.war
 *.exe
-webpack.stats.json
-.jshintignore
-.jshintrc
-yarn-error*.log
-selenium-debug.log
-errorShots
-build/
-dev/
-api-key.js
-.env
-
 *.zip
 *.crx
 *.pem
