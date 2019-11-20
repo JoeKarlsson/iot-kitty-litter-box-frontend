@@ -1,329 +1,279 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Basic Page Needs
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>IoT Kitty Litter Box</title>
-    <meta name="description" content="" />
-    <meta name="author" content="Joe Karlsson" />
 
-    <!-- Mobile Specific Metas
+<head>
+  <!-- Basic Page Needs
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IoT Kitty Litter Box</title>
+  <meta name="description" content="" />
+  <meta name="author" content="Joe Karlsson" />
 
-    <!-- OG Meta Data
+  <!-- Mobile Specific Metas
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta
-      property="og:description"
-      content="Welcome to to world of IoT (Internet of Toilets 🚽). This is the code you will need to setup your very own internet connect kitty litter box!"
-    />
-    <meta property="og:title" content="IoT Kitty Litter Box" />
-    <meta property="og:url" content="https://gaptcha.herokuapp.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="IoT Kitty Litter Box" />
-    <meta property="og:image" content="/img/socialImg.png" />
-    <link rel="author" href="https://plus.google.com/u/0/+JoeKarlsson/posts" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:description"
-      content="Welcome to to world of IoT (Internet of Toilets 🚽). This is the code you will need to setup your very own internet connect kitty litter box!"
-    />
-    <meta name="twitter:title" content="IoT Kitty Litter Box" />
-    <meta name="twitter:site" content="@joekarlsson1" />
-    <meta name="twitter:image" content="/img/socialImg.png" />
-    <meta name="twitter:creator" content="@joekarlsson1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- FAVICON
+  <!-- OG Meta Data
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta property="og:description"
+    content="Welcome to to world of IoT (Internet of Toilets 🚽). This is the code you will need to setup your very own internet connect kitty litter box!" />
+  <meta property="og:title" content="IoT Kitty Litter Box" />
+  <meta property="og:url" content="https://gaptcha.herokuapp.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="IoT Kitty Litter Box" />
+  <meta property="og:image" content="/img/socialImg.png" />
+  <link rel="author" href="https://plus.google.com/u/0/+JoeKarlsson/posts" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:description"
+    content="Welcome to to world of IoT (Internet of Toilets 🚽). This is the code you will need to setup your very own internet connect kitty litter box!" />
+  <meta name="twitter:title" content="IoT Kitty Litter Box" />
+  <meta name="twitter:site" content="@joekarlsson1" />
+  <meta name="twitter:image" content="/img/socialImg.png" />
+  <meta name="twitter:creator" content="@joekarlsson1" />
+
+  <!-- FAVICON
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
 
-    <!-- FONT
+  <!-- FONT
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
-    <!-- Scripts
+  <!-- Scripts
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="/css/bulma.css" />
-    <link rel="stylesheet" href="/css/bulma-swatch.min.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
+  <link rel="stylesheet" href="/css/bulma.css" />
+  <link rel="stylesheet" href="/css/bulma-swatch.min.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
 
-  <body>
-    <div class="is-fluid">
-      <nav class="navbar">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="#">IoT Kitty Litter Box</a
-            ><a
-              class="navbar-burger"
-              role="button"
-              aria-label="menu"
-              aria-expanded="false"
-              ><span aria-hidden="true"></span><span aria-hidden="true"></span
-              ><span aria-hidden="true"></span
-            ></a>
-          </div>
-          <div class="navbar-menu">
-            <div class="navbar-start">
-              
-            </div>
-            <div class="navbar-end">
-              <a class="navbar-item" href="#">About</a>
-              <a class="navbar-item" href="#">Resources</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <div class="container"></div>
-
-
-      <section class="hero">
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="title is-spaced">IoT Kitty Litter Box</h1>
-            <h2 class="subtitle">
-              My favorite things in life are cats 🐈, computers 🖥 and crappy ideas 💩, so I decided to combine all three and make an IoT (Internet of Things) litter box using a Raspberry Pi and JavaScript.
-
-              help track your feline friend's health by measuring its weight every time it sets foot on the litter tray, and monitors its urination patterns. The equipment can be connected to a companion smartphone app that displays the relevant data in an easy-to-understand graph format, so that cat parents can quickly spot symptoms of unusual weight loss.
-            </h2>
-            <div class="buttons is-centered">
-              <a class="control button is-light" href="#">Read more</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <h2 class="title">Great Companies that already use PiperNet</h2>
-          <div class="columns">
-            <div class="column is-9">
-              <a href="#"
-                ><iframe
-                  style="border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"
-                  width="640"
-                  height="480"
-                  src="https://charts.mongodb.com/charts-iot-kitty-litter-box-gbucw/embed/charts?id=2fa4626c-5d12-4da0-a982-eb305c6b5bdd&tenant=29dcda81-a0b3-42a5-8feb-7f5771fab423"
-                ></iframe
-              ></a>
-            </div>
-            <div class="column is-3">
-              <div class="columns is-mobile is-multiline">
-                <div class="column is-4-mobile is-12-tablet">
-                  <a href="#"
-                    ><img
-                      src="placeholder/pictures/bg_4-3.svg?primary=00d1b2"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="column is-4-mobile is-12-tablet">
-                  <a href="#"
-                    ><img
-                      src="placeholder/pictures/bg_4-3.svg?primary=00d1b2"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="column is-4-mobile is-12-tablet">
-                  <a href="#"
-                    ><img
-                      src="placeholder/pictures/bg_4-3.svg?primary=00d1b2"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column is-half">
-              <h4 class="title is-spaced is-4">Client: K-Hole</h4>
-              <p class="subtitle">
-                We are constantly looking for new partners to migrate onto the
-                Piper Net. The future of the internet is here - venture towards
-                it with Pied Piper!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <h2 class="title has-text-centered">Frequently Asked Questions</h2>
-          <div class="block">
-            <div class="card block">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <img
-                        class="is-rounded"
-                        src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=00d1b2"
-                        alt=""
-                      />
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <h3 class="title is-4">
-                      How is a decentralized network different from the
-                      traditional web?
-                    </h3>
-                    <p>
-                      Decentralization is a key aspect of PiperNet.
-                      Traditionally, to access data on a website, you needed to
-                      connect to a single server containing that data. This
-                      method of storing data makes it easy for third parties to
-                      get access to it, corrupt it or even delete it. In
-                      PiperNet it is securely stored on multiple devices in the
-                      network, which makes it harder to hack and interfere with
-                      your data.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card block">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <img
-                        class="is-rounded"
-                        src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=00d1b2"
-                        alt=""
-                      />
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <h3 class="title is-4">
-                      Why shouldn't I just store my data on a Hooli Box?
-                    </h3>
-                    <p>
-                      That's just the thing - if you store your data in a single
-                      place, like Gavin Belsons' poorly-made server box, your
-                      data will very susceptible to hacking. Whereas on
-                      PiperNet, your data is safe with many copies to back it up
-                      from.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card block">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <img
-                        class="is-rounded"
-                        src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=00d1b2"
-                        alt=""
-                      />
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <h3 class="title is-4">What makes PiperNet so safe?</h3>
-                    <p>
-                      Our proprietary middle-out compression algorithm allows
-                      data to flow so fast that it can't be hacked! But, in all
-                      seriousness, the algorithm helps but it's the public,
-                      immutable ledger that makes it secure. This enables
-                      PiperNet users to exchange data without risk of it being
-                      intercepted by third parties.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card block">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <img
-                        class="is-rounded"
-                        src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=00d1b2"
-                        alt=""
-                      />
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <h3 class="title is-4">
-                      How long does it take to get a company up and running on
-                      PiperNet?
-                    </h3>
-                    <p>
-                      Access to the public network is granted within a day, but
-                      moving all your data and integrating your existing
-                      software depends on how big your company is. Startups can
-                      expect to be fully online within a week, enterprises can
-                      take up to a month due to large reliance on legacy systems
-                      and huge datasets.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buttons is-centered">
-            <a class="button is-primary" href="#">See all</a>
-          </div>
-        </div>
-      </section>
-
+<body>
+  <div class="is-fluid">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">IoT Kitty Litter Box</a><a class="navbar-burger" role="button" aria-label="menu"
+          aria-expanded="false"><span aria-hidden="true"></span><span aria-hidden="true"></span><span
+            aria-hidden="true"></span></a>
       </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
 
-      <footer class="footer">
-        <div class="container">
-          <div class="level">
-            <div class="level-left">
-              <div class="level-item">
-                <a class="title is-4" href="#">IoT Kitty Litter Box</a>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item" href="#">About</a>
+          <a class="navbar-item" href="#">Resources</a>
+        </div>
+      </div>
+  </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-spaced">IoT Kitty Litter Box 🐈💩</h1>
+        <h2 class="subtitle">Welcome to to world of IoT (Internet of Toilets 🚽)</h2>
+        <div class="buttons is-centered">
+          <a class="control button is-light" href="#">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+
+
+    <section class="section">
+      <div class="container has-text-justified">
+        <p>My favorite things in life are cats 🐈, computers 🖥 and crappy ideas 💩, so I decided to combine all three
+          and make an IoT (Internet of Things) litter box using a Raspberry Pi and JavaScript.</p></br>
+        <p>This project will help track your feline friend's health by measuring its weight every time it sets foot on
+          the litter tray, and monitors its urination patterns. The equipment can be connected to a companion smartphone
+          app that displays the relevant data in an easy-to-understand graph format, so that cat parents can quickly
+          spot symptoms of unusual weight loss.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="title">Let's check out the data</h2>
+        <div class="columns">
+          <div class="column is-12">
+            <a href="#"><iframe style="border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);"
+                width="640" height="600"
+                src="https://charts.mongodb.com/charts-iot-kitty-litter-box-gbucw/embed/charts?id=2fa4626c-5d12-4da0-a982-eb305c6b5bdd&tenant=29dcda81-a0b3-42a5-8feb-7f5771fab423"></iframe></a>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-half">
+            <h4 class="title is-spaced is-4">Source: <a href="https://www.mongodb.com/products/charts">MongoDB
+                Charts</a></h4>
+            <p class="subtitle">
+              We are constantly looking for new partners to migrate onto the
+              Piper Net. The future of the internet is here - venture towards
+              it with Pied Piper!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="title has-text-centered">Frequently Asked Questions</h2>
+        <div class="block">
+          <div class="card block">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img class="is-rounded" src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=00d1b2"
+                      alt="" />
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <h3 class="title is-4">
+                    How is a decentralized network different from the
+                    traditional web?
+                  </h3>
+                  <p>
+                    Decentralization is a key aspect of PiperNet.
+                    Traditionally, to access data on a website, you needed to
+                    connect to a single server containing that data. This
+                    method of storing data makes it easy for third parties to
+                    get access to it, corrupt it or even delete it. In
+                    PiperNet it is securely stored on multiple devices in the
+                    network, which makes it harder to hack and interfere with
+                    your data.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="level-right">
-              <a class="level-item" href="#">Features</a
-              ><a class="level-item" href="#">Enterprise</a
-              ><a class="level-item" href="#">Support</a
-              ><a class="level-item" href="#">ICO</a>
             </div>
           </div>
-          <hr />
-          <div class="columns">
-            <div class="column">
-              <div class="buttons">
-                <a
-                  class="button"
-                  href="https://twitter.com/intent/tweet?text=Checkout_this_awesome_IoT_Litter_Box:&url=https%3A%2F%2Fgithub.com%2FJoeKarlsson%2Fiot-kitty-litter-box"
-                  ><img src="img/icons/twitter.svg" alt=""/></a
-                ><a
-                  class="button"
-                  href="https://www.facebook.com/sharer/sharer.php?&u=https://joekarlsson.github.io/iot-kitty-litter-box-frontend/"
-                  ><img src="img/icons/facebook-f.svg" alt=""
-                /></a>
+          <div class="card block">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img class="is-rounded" src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=00d1b2"
+                      alt="" />
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <h3 class="title is-4">
+                    Why shouldn't I just store my data on a Hooli Box?
+                  </h3>
+                  <p>
+                    That's just the thing - if you store your data in a single
+                    place, like Gavin Belsons' poorly-made server box, your
+                    data will very susceptible to hacking. Whereas on
+                    PiperNet, your data is safe with many copies to back it up
+                    from.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="column has-text-centered has-text-right-tablet">
-              <p class="subtitle is-6">
-                &copy; 2010
-                <script>
-                  new Date().getFullYear() > 2018 &&
-                    document.write("-" + new Date().getFullYear());
-                </script>
-                , Joe Karlsson. All rights reserved.
-              </p>
+          </div>
+          <div class="card block">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img class="is-rounded" src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=00d1b2"
+                      alt="" />
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <h3 class="title is-4">What makes PiperNet so safe?</h3>
+                  <p>
+                    Our proprietary middle-out compression algorithm allows
+                    data to flow so fast that it can't be hacked! But, in all
+                    seriousness, the algorithm helps but it's the public,
+                    immutable ledger that makes it secure. This enables
+                    PiperNet users to exchange data without risk of it being
+                    intercepted by third parties.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card block">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img class="is-rounded" src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=00d1b2"
+                      alt="" />
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <h3 class="title is-4">
+                    How long does it take to get a company up and running on
+                    PiperNet?
+                  </h3>
+                  <p>
+                    Access to the public network is granted within a day, but
+                    moving all your data and integrating your existing
+                    software depends on how big your company is. Startups can
+                    expect to be fully online within a week, enterprises can
+                    take up to a month due to large reliance on legacy systems
+                    and huge datasets.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
+        <div class="buttons is-centered">
+          <a class="button is-primary" href="#">See all</a>
+        </div>
+      </div>
+    </section>
 
-    <script type="text/javascript" src="/js/app.js"></script>
-  </body>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item">
+            <a class="title is-4" href="#">IoT Kitty Litter Box</a>
+          </div>
+        </div>
+        <div class="level-right">
+          <a class="level-item" href="#">Features</a><a class="level-item" href="#">Enterprise</a><a class="level-item"
+            href="#">Support</a><a class="level-item" href="#">ICO</a>
+        </div>
+      </div>
+      <hr />
+      <div class="columns">
+        <div class="column">
+          <div class="buttons">
+            <a class="button"
+              href="https://twitter.com/intent/tweet?text=Checkout_this_awesome_IoT_Litter_Box:&url=https%3A%2F%2Fgithub.com%2FJoeKarlsson%2Fiot-kitty-litter-box"><img
+                src="img/icons/twitter.svg" alt="" /></a><a class="button"
+              href="https://www.facebook.com/sharer/sharer.php?&u=https://joekarlsson.github.io/iot-kitty-litter-box-frontend/"><img
+                src="img/icons/facebook-f.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="column has-text-centered has-text-right-tablet">
+          <p class="subtitle is-6">
+            &copy; 2010
+            <script>
+              new Date().getFullYear() > 2018 &&
+                document.write("-" + new Date().getFullYear());
+            </script>
+            , Joe Karlsson. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="/js/app.js"></script>
+</body>
+
 </html>
