@@ -1,0 +1,21 @@
+{
+  "_id": { "$oid": "5dcf1ce2c8435b716268efe0" },
+  "timestamp_day": { "$date": { "$numberLong": "1573854434214" } },
+  "type": "cat_in_box",
+  "cat": { "name": "BMO", "weight": "200" },
+  "owner": "Joe Karlsson",
+  "events": [
+    {
+      "timestamp_event": { "$date": { "$numberLong": "1573854435016" } },
+      "weight": { "$numberDouble": "-602.593333333" }
+    },
+    {
+      "timestamp_event": { "$date": { "$numberLong": "1573854435824" } },
+      "weight": { "$numberDouble": "-595.132222222" }
+    },
+    {
+      "timestamp_event": { "$date": { "$numberLong": "1573854436632" } },
+      "weight": { "$numberDouble": "-596.5488888886666" }
+    }
+  ]
+}
